@@ -40,7 +40,7 @@ RUN apk --no-cache update && \
     apk del --no-cache zlib-dev && \
     apk add --no-cache curl
 # download ycast tar.gz and extract it in ycast Directory
-RUN curl -L https://codeload.github.com/superclass/YCast/tar.gz/master \
+RUN curl -L https://codeload.github.com/ThHanika/YCast/zip/refs/heads/master \ 
     | tar xvzC /opt/ycast
 # delete unneeded stuff
 RUN apk del --no-cache curl && \
